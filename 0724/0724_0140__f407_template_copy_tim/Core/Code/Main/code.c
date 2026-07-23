@@ -20,8 +20,9 @@ void CODE_SELF_TEST(void){
     while(1){
         // muti_printf_self_test();
         // my_led_self_test();
-        my_test();
-        // while(1);
+        my_pwm_self_test();
+        // my_test();
+        while(1);
     }
 }
 

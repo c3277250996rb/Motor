@@ -16,6 +16,7 @@
   */
   
   #include "my_tim.h"
+  #include "my_led.h"
 
   TIM_HandleTypeDef  TIM_PWMOUTPUT_Handle;
   TIM_HandleTypeDef  TIM_PWMINPUT_Handle;
@@ -228,5 +229,35 @@
 
 
 
-  /*********************************************END OF FILE**********************/
+uint8_t time = 0;
+uint16_t direction = 1;
+uint16_t compare_value = 0;
+void my_pwm_self_test(){
+
+    while(1){
+        compare_value += direction * 10;
+
+        if(compare_value > 5000 - 1){
+            direction = -1; //超过比较值时递减
+        }
+        if(compare_value == 0){
+            direction = 1;  //减到0时递增
+        }
+        
+        /* 修改比较值控制占空比 */
+        __HAL_TIM_SET_COMPARE(&TIM_PWMOUTPUT_Handle, TIM_CHANNEL_1, compare_value);
+
+        time++;
+        if(time > 50){
+            time = 0;
+            my_led_self_test(); /* 控制 LED0 闪烁, 提示程序运行状态 */
+            HAL_Delay(500);
+            printf("IC1Value = %d  IC2Value = %d ",IC1Value,IC2Value);
+            printf("占空比：%0.2f%%   频率：%0.2fHz\r\n",DutyCycle,Frequency);	
+        }
+        delay_ms(10);
+    }
+
+}
+  
   

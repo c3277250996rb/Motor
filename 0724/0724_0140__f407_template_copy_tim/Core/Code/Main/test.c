@@ -10,9 +10,6 @@ extern __IO float DutyCycle;
 extern __IO float Frequency;
 int my_test(void){
     
-		HAL_Delay(500);
-		printf("IC1Value = %d  IC2Value = %d ",IC1Value,IC2Value);
-		printf("Õ¼¿Õ±È£º%0.2f%%   ÆµÂÊ£º%0.2fHz\r\n",DutyCycle,Frequency);	
 }
 #endif
 
