@@ -15,9 +15,20 @@ void TIM6_DAC_IRQHandler(void){
 
 /**
   * @brief TIM6 Initialization Function
-  * @param None
-  * @retval None
+  * 1. 开启时钟
+  * 
+  * 2.1 实例
+  * 2.2 预分频系数
+  * 2.3 计数方向
+  * 2.4 重装载值
+  * 2.5 启用自动重装载
+  * 
+  * 3. Base_Init
+  * 4. 设置中断优先级
+  * 5. 启用中断
+  * 6. Base_Start_IT
   */
+
 void MY_TIM6_Init(void)
 {
     __HAL_RCC_TIM6_CLK_ENABLE();
