@@ -235,6 +235,14 @@ uint16_t compare_value = 0;
 void my_pwm_self_test(){
 
     while(1){
+        if(time > 50){
+            time = 0;
+            int delay = ((int)compare_value - (int)IC2Value+1) / direction;
+            my_led_self_test(); /* 控制 LED0 闪烁, 提示程序运行状态 */
+            printf("IC1Value = %d  IC2Value = %d compare_value = %d 延时 = %dus  平均延时 = %dus  ",IC1Value,IC2Value+1, compare_value, delay, moving_avarage(delay));
+            printf("占空比：%0.2f%%   频率：%0.2fHz\r\n",DutyCycle,Frequency);	
+        }
+
         compare_value += direction * 10;
 
         if(compare_value > 25000 - 1){
@@ -248,13 +256,7 @@ void my_pwm_self_test(){
         __HAL_TIM_SET_COMPARE(&TIM_PWMOUTPUT_Handle, TIM_CHANNEL_1, compare_value);
 
         time++;
-        if(time > 50){
-            time = 0;
-            int delay = ((int)compare_value - (int)IC2Value+1) / direction * 1000000 / 50000;
-            my_led_self_test(); /* 控制 LED0 闪烁, 提示程序运行状态 */
-            printf("IC1Value = %d  IC2Value = %d compare_value = %d 延时 = %dus  平均延时 = %dus  ",IC1Value,IC2Value+1, compare_value, delay, moving_avarage(delay));
-            printf("占空比：%0.2f%%   频率：%0.2fHz\r\n",DutyCycle,Frequency);	
-        }
+        
         delay_ms(2);
     }
 
