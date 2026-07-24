@@ -251,8 +251,7 @@ void my_pwm_self_test(){
         if(time > 50){
             time = 0;
             my_led_self_test(); /* 控制 LED0 闪烁, 提示程序运行状态 */
-            HAL_Delay(500);
-            printf("IC1Value = %d  IC2Value = %d ",IC1Value,IC2Value);
+            printf("IC1Value = %d  IC2Value = %d compare_value = %d",IC1Value,IC2Value, compare_value);
             printf("占空比：%0.2f%%   频率：%0.2fHz\r\n",DutyCycle,Frequency);	
         }
         delay_ms(10);
