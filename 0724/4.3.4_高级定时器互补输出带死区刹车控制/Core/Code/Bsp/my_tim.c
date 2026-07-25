@@ -293,7 +293,7 @@ void atim_timx_cplm_pwm_init(uint16_t arr, uint16_t psc)
 * @arg dtg[7:5]=10x 时, 死区时间 = (64 + dtg[6:0]) * 2 * tDTS
 * @arg dtg[7:5]=110 时, 死区时间 = (32 + dtg[5:0]) * 8 * tDTS
 * @arg dtg[7:5]=111 时, 死区时间 = (32 + dtg[5:0]) * 16 * tDTS
-* @note tDTS = 1 / (Ft / CKD[1:0]) = 1 / 42M = 23.8ns
+* @note tDTS = 1 / (Ft / CKD[1:0])
 * @retval 无
 */
 void atim_timx_cplm_pwm_set(uint16_t ccr, uint8_t dtg)
@@ -335,7 +335,7 @@ void my_pwm_self_test(){
         
         /* 修改比较值控制占空比 */
         // __HAL_TIM_SET_COMPARE(&TIM_PWMOUTPUT_Handle, TIM_CHANNEL_1, compare_value);
-        __HAL_TIM_SET_COMPARE(&g_timx_cplm_pwm_handle, TIM_CHANNEL_1, compare_value);
+        // __HAL_TIM_SET_COMPARE(&g_timx_cplm_pwm_handle, TIM_CHANNEL_1, compare_value);
 
         time++;
         
