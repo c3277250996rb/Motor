@@ -70,10 +70,11 @@
 
 
 void my_led_self_test(void){
-    LED_APP_OFF(&LED_Class_RED);
-    delay_ms(500);
-    LED_APP_ON(&LED_Class_RED);
-    delay_ms(1000);
+    // LED_APP_OFF(&LED_Class_RED);
+    // delay_ms(500);
+    // LED_APP_ON(&LED_Class_RED);
+    // delay_ms(1000);
+    LED_APP_Toggle(&LED_Class_RED);
 }
 
 

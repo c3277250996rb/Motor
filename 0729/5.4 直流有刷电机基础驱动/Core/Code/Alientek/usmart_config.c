@@ -42,7 +42,9 @@ char *my_func_list[] = {
 	"reset",
 
 	"multi",
-	"led"
+	"led", 
+	"motor_on", 
+	"motor_off"
 };
 int my_func_len = sizeof(my_func_list) / sizeof(my_func_list[0]);
 
@@ -101,6 +103,13 @@ int ug(char *idle){
 			break;
 		case 5:
 			my_led_self_test();
+			break;
+		case 6:
+			dcmotor_start();            /* 开启电机 */
+			my_motor_self_test();
+			break;
+		case 7:
+			dcmotor_stop();             /* 停止则立刻响应 */
 			break;
 		default:
 			printf("%s[%d]: 啊?这...\r\n", __FILE__, __LINE__);

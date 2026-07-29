@@ -8,7 +8,8 @@
 #include "usmart.h"
 
 #include "my_led.h"
-
+#include "my_tim.h"
+#include "my_motor.h"
 
 // template
 #if 0

@@ -103,16 +103,13 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 	#elif defined(__STM32F4xx_H)
 	// F407
 
-		#ifndef USART1_TX_PB6_Pin
-			#define USART1_TX_PB6_Pin GPIO_PIN_6
-			#define USART1_TX_PB6_GPIO_Port GPIOB
-			#define USART1_RX_PB7_Pin GPIO_PIN_7
-			#define USART1_RX_PB7_GPIO_Port GPIOB
-		#endif
-
 		__USART1_CLK_ENABLE();
 		__GPIOB_CLK_ENABLE();
 
+		/**USART1 GPIO Configuration    
+		PA9     ------> USART1_TX
+		PA10    ------> USART1_RX 
+		*/
 		/* 配置Tx引脚为复用功能  */
 		GPIO_Initure.Pin = USART1_TX_PB6_Pin;
 		GPIO_Initure.Mode = GPIO_MODE_AF_PP;
