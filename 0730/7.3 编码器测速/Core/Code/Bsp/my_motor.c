@@ -153,7 +153,7 @@ void my_motor_self_test(void){
     uint32_t time = 0;
     int32_t compare_value = 400;
     int32_t max_value = 4200;
-    int32_t step = 400;
+    int32_t step = 400 * 3;
     int32_t direction = 1;
 
     uint16_t init_adc_val;  /* init_adc_val存储电流测量对应的参考电压ADC值，这里进行滤波 */
@@ -169,7 +169,7 @@ void my_motor_self_test(void){
         // printf("[%d]",time);
         printf("[%d]  Valtage: %.1fV  Temperature: %.1fC  Ampere: %.1f  RPM: %.1f\r\n",time, g_adc_val[0]*ADC2VBUS, get_temp(g_adc_val[1]), abs(g_adc_val[2]-init_adc_val)*ADC2CURT, g_motor_data.speed);
         
-        if((time % 3) == 0){
+        if((time % 10) == 0){
             if(compare_value <= -max_value){
                 direction = 1;
             }
