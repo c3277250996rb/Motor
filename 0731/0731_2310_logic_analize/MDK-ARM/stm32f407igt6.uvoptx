@@ -160,7 +160,7 @@
         <tRtrace>1</tRtrace>
         <sRSysVw>1</sRSysVw>
         <tRSysVw>1</tRSysVw>
-        <sRunDeb>0</sRunDeb>
+        <sRunDeb>1</sRunDeb>
         <sLrtime>0</sLrtime>
         <nTsel>5</nTsel>
         <sDll></sDll>

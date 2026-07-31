@@ -31,16 +31,12 @@ void pid_init(void)
 volatile float speed_target = 0;
 volatile float speed_actual = 0;
 volatile float speed_error = 0;
-int time = 0;
 int32_t increment_pid_ctrl(PID_TypeDef *PID,float Feedback_value)
 {
     #if 1
-    // if(time++ == 20){
         speed_target = PID->SetPoint;
         speed_actual = Feedback_value;
         speed_error = speed_actual - speed_target;
-        // time = 0;
-    // }
     #endif
 
     PID->Error = (float)(PID->SetPoint - Feedback_value);                   /* ¼ÆËãÆ«²î */
