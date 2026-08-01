@@ -1,0 +1,181 @@
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'stm32f407igt6'
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_ll_adc.c...
+compiling stm32f4xx_it.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #127: expected a statement
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(36): error:  #525: a dependent statement may not be a declaration
+  void dcmotor_init(void);                /* 直????刷?缁?始化 */
+../Core/Src/stm32f4xx_it.c(98): error:  #116: a break statement may only be used within a loop or switch
+      break;
+../Core/Src/stm32f4xx_it.c(101): error:  #169: expected a declaration
+  }
+../Core/Src/stm32f4xx_it.c: 0 warnings, 5 errors
+compiling stm32f4xx_hal_rcc.c...
+compiling main.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #127: expected a statement
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(14): error:  #169: expected a declaration
+  }while(0)
+../Core/Src/main.c(110): error:  #260-D: explicit type is missing ("int" assumed)
+    CODE_MAIN();
+../Core/Src/main.c(110): error:  #147: declaration is incompatible with "void CODE_MAIN(void)" (declared at line 96 of "../Core/Code/Main/code.h")
+    CODE_MAIN();
+../Core/Src/main.c(115): error:  #169: expected a declaration
+    while (1)
+../Core/Src/main.c(152): error:  #169: expected a declaration
+    }
+../Core/Src/main.c(158): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Core/Src/main.c(158): error:  #65: expected a ";"
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Core/Src/main.c(159): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+../Core/Src/main.c(159): error:  #65: expected a ";"
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+../Core/Src/main.c(160): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
+../Core/Src/main.c(160): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
+../Core/Src/main.c(161): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+../Core/Src/main.c(161): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+../Core/Src/main.c(163): error:  #169: expected a declaration
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
+../Core/Src/main.c(197): error:  #77-D: this declaration has no storage class or type specifier
+    hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+../Core/Src/main.c(197): error:  #147: declaration is incompatible with "ADC_HandleTypeDef hadc1" (declared at line 43)
+    hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+../Core/Src/main.c(197): error:  #65: expected a ";"
+    hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+../Core/Src/main.c(198): error:  #77-D: this declaration has no storage class or type specifier
+    hadc1.Init.NbrOfConversion = 3;
+../Core/Src/main.c(198): error:  #147: declaration is incompatible with "ADC_HandleTypeDef hadc1" (declared at line 197)
+    hadc1.Init.NbrOfConversion = 3;
+../Core/Src/main.c(198): error:  #65: expected a ";"
+    hadc1.Init.NbrOfConversion = 3;
+../Core/Src/main.c(199): error:  #77-D: this declaration has no storage class or type specifier
+    hadc1.Init.DMAContinuousRequests = DISABLE;
+../Core/Src/main.c(199): error:  #147: declaration is incompatible with "ADC_HandleTypeDef hadc1" (declared at line 198)
+    hadc1.Init.DMAContinuousRequests = DISABLE;
+../Core/Src/main.c(199): error:  #65: expected a ";"
+    hadc1.Init.DMAContinuousRequests = DISABLE;
+../Core/Src/main.c(200): error:  #77-D: this declaration has no storage class or type specifier
+    hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+../Core/Src/main.c(200): error:  #147: declaration is incompatible with "ADC_HandleTypeDef hadc1" (declared at line 199)
+    hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+../Core/Src/main.c(200): error:  #65: expected a ";"
+    hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+../Core/Src/main.c(201): error:  #169: expected a declaration
+    if (HAL_ADC_Init(&hadc1) != HAL_OK)
+../Core/Src/main.c(209): error:  #77-D: this declaration has no storage class or type specifier
+    sConfig.Rank = 1;
+../Core/Src/main.c: 0 warnings, 30 errors
+compiling stm32f4xx_hal_adc.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_adc_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling code.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Main\code.c: 0 warnings, 2 errors
+compiling test.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Main\test.c: 0 warnings, 2 errors
+compiling my_pid.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Tool\my_pid.c(102): error:  #7: unrecognized token
+              
+OTOR_DIRECTION_CHECK(speed_to_ampere); /* ?卸??俣然??涑?值?欠?为???? */
+..\Core\Code\Tool\my_pid.c(102): error:  #29: expected an expression
+              
+OTOR_DIRECTION_CHECK(speed_to_ampere); /* ?卸??俣然??涑?值?欠?为???? */
+..\Core\Code\Tool\my_pid.c(114): error:  #112: expected "while"
+          time = 0;
+..\Core\Code\Tool\my_pid.c(115): error:  #125: expected a "("
+      }
+..\Core\Code\Tool\my_pid.c(115): error:  #29: expected an expression
+      }
+..\Core\Code\Tool\my_pid.c(115): error:  #18: expected a ")"
+      }
+..\Core\Code\Tool\my_pid.c(115): error:  #65: expected a ";"
+      }
+..\Core\Code\Tool\my_pid.c(118): error: At end of source:  #67: expected a "}"
+..\Core\Code\Tool\my_pid.c: 0 warnings, 10 errors
+compiling stm32f4xx_hal_exti.c...
+compiling my_motor.c...
+..\Core\Code\Bsp\my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Bsp\my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Bsp\my_motor.c: 0 warnings, 2 errors
+compiling my_string.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Tool\my_string.c: 0 warnings, 2 errors
+compiling my_led.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Bsp\my_led.c: 0 warnings, 2 errors
+compiling system_stm32f4xx.c...
+compiling my_adc.c...
+..\Core\Code\Bsp\my_adc.c(174): error:  #20: identifier "g_motor_data" is undefined
+                  g_motor_data.current = (float)((g_motor_data.current * (float)0.60) + ((float)0.40 * temp_c));  /* 一?椎?通?瞬? */
+..\Core\Code\Bsp\my_adc.c: 0 warnings, 1 error
+compiling my_tim.c...
+..\Core\Code\Bsp\my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Bsp\my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Bsp\my_tim.c: 0 warnings, 2 errors
+compiling my_number.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling delay.c...
+compiling stm32f4xx_hal_uart.c...
+compiling usart.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Alientek\usart.c: 0 warnings, 2 errors
+compiling sys.c...
+compiling usmart_config.c...
+../Core/Code/Bsp/my_motor.h(13): error:  #169: expected a declaration
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+../Core/Code/Bsp/my_motor.h(13): error:  #7: unrecognized token
+      else{(x) = -(x); dcmotor_dir(1);}\  /*目?甑??鞑???为负???俣然??涑?要取反，???玫缁?转*/
+..\Core\Code\Alientek\usmart_config.c: 0 warnings, 2 errors
+compiling usmart_str.c...
+compiling usmart.c...
+compiling stm32f4xx_hal_tim.c...
+"stm32f407igt6\stm32f407igt6.axf" - 62 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
