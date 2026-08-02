@@ -1,0 +1,43 @@
+
+USART6 TEST
+
+启动成功!
+正点-F407-电机
+[0]  Valtage: 11.6V  Temperature: 32.2C  Ampere: 6.7  RPM: 0.0
+speed_value: 90
+[1]  Valtage: 11.6V  Temperature: 32.3C  Ampere: 40.3  RPM: 91.1
+[2]  Valtage: 11.6V  Temperature: 32.3C  Ampere: 33.6  RPM: 90.3
+[3]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 40.3  RPM: 89.7
+[4]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 33.6  RPM: 89.6
+[5]  Valtage: 11.6V  Temperature: 32.3C  Ampere: 40.3  RPM: 90.0
+speed_value: 150
+[6]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 60.4  RPM: 150.3
+[7]  Valtage: 11.6V  Temperature: 32.3C  Ampere: 53.7  RPM: 150.7
+[8]  Valtage: 11.6V  Temperature: 32.3C  Ampere: 60.4  RPM: 150.4
+[9]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 60.4  RPM: 150.8
+[10]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 53.7  RPM: 149.9
+speed_value: 90
+[11]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 33.6  RPM: 89.9
+[12]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 33.6  RPM: 90.0
+[13]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 26.9  RPM: 90.1
+[14]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 33.6  RPM: 88.7
+[15]  Valtage: 11.6V  Temperature: 32.4C  Ampere: 26.9  RPM: 89.7
+speed_value: 30
+[16]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 13.4  RPM: 30.2
+[17]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 13.4  RPM: 30.0
+[18]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 13.4  RPM: 30.9
+[19]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 13.4  RPM: 30.1
+[20]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 13.4  RPM: 29.6
+speed_value: -30
+[21]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 20.1  RPM: -30.2
+[22]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 20.1  RPM: -30.2
+[23]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 13.4  RPM: -30.1
+[24]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 13.4  RPM: -30.0
+[25]  Valtage: 11.6V  Temperature: 32.5C  Ampere: 20.1  RPM: -30.3
+speed_value: -90
+[26]  Valtage: 11.6V  Temperature: 32.6C  Ampere: 40.3  RPM: -89.6
+[27]  Valtage: 11.6V  Temperature: 32.6C  Ampere: 33.6  RPM: -90.5
+[28]  Valtage: 11.6V  Temperature: 32.6C  Ampere: 40.3  RPM: -90.5
+[29]  Valtage: 11.6V  Temperature: 32.6C  Ampere: 33.6  RPM: -89.9
+
+
