@@ -225,7 +225,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Core\Code\Bsp\my_motor.c</Filename>
+          <Filename>A:\fasta\GitHub\Motor\0802\Core\Code\Bsp\my_motor.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\stm32f407igt6\../Core/Code/Bsp/my_motor.c\212</Expression>
         </Bp>
