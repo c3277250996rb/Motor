@@ -13,7 +13,7 @@
 
 
 // USART6
-// #define USE_DEBUG_PRINTF_VIEWER_USART6
+#define USE_DEBUG_PRINTF_VIEWER_USART6
 void init_debug_printf_usart6(void);
 void ITM_SendString(char *str);
 
