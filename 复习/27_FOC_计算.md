@@ -1,11 +1,12 @@
 # 反馈回路📐
 
 $$
-逆变器\rightarrow\begin{gathered}三相电流 & \\ ia,ib,ic & \end{gathered}\to \begin{gathered} & CLarke变换\\  & \alpha,\beta\end{gathered}\to \begin{gathered}Park变换 & \\ d,q & \end{gathered}\to PI反馈器
+逆变器\rightarrow\begin{gathered}三相电流 & \\ ia,ib,ic & \end{gathered}\to \begin{gathered} & Clarke变换\\  & \alpha,\beta\end{gathered}\to \begin{gathered}Park变换 & \\ d,q & \end{gathered}\to PI反馈器
 $$
 
 
 <hr style="background-color: yellow;">
+### Clarke变换+Park变换
 
 ![image-20260816145516300](./assets/image-20260816145516300.png)
 
@@ -19,17 +20,22 @@ $$
 $$
 
 <hr style="background-color: yellow;">
+### 计算`us(空间合成矢量)`
 
+证明**三相正弦电压可以等效成一个旋转的电压矢量，并作为后面 SVPWM 合成的目标量**。
 
 ![image-20260816145603016](./assets/image-20260816145603016.png)
 
 <hr style="background-color: yellow;">
+### 计算`T4,T6(基本矢量作用时间)`
 
 ![image-20260816145628724](./assets/image-20260816145628724.png)
 
 <hr style="background-color: yellow;">
+### 判断扇区 & 汇总
+
 
 ![image-20260816145638844](./assets/image-20260816145638844.png)
 
-<hr style="background-color: black;">
+<hr style="background-color: yellow;">
 
